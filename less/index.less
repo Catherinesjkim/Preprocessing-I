@@ -29,8 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -53,7 +55,228 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+// VARIABLES
+@font-size: 16px;
+@padding: 20px;
+@margin: 3px;
+@bold: 5px;
+
+// MIXINS
+.ffbasic() {
+	font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2, AppleGothic, "helvetica neue", Arial, sans-serif;
 }
 
+.bordered {
+  border-bottom: solid 1px gray;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: @padding;
+	.ffbasic();
+	}
+
+	.space {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+		a {
+			line-height: 1rem;
+			text-decoration: none;
+			padding: @padding;
+			margin: @margin;
+			color: black;
+			font-weight: bold; 
+		}
+
+		// Mobile Version
+	@media (max-width: 500px) {
+		header nav {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+		}
+
+	.gray-box {
+		background: #D3D3D3;
+		text-align: left;
+		padding: @padding;
+		padding-left: 20px;
+		padding-bottom: 60px;
+		margin: @margin;
+	}
+		
+		.top-img {
+			padding-top: 40px;
+			width: 30%;
+		}
+
+  .about-me {
+			.bordered();
+			padding-bottom: @padding;
+		}
+
+		@media (max-width: 500px) {
+			.top-img {
+				padding: 5%;
+			}
+
+		h1 {
+			font-weight: @bold;
+			font-size: 40px;
+			padding-bottom: @padding;
+			padding-top: @padding;
+		}
+
+			h2 {
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+				p {
+					padding-bottom: @padding;
+	
+				}
+
+				@media (max-width: 500px) {
+					main .top-main {
+						flex-direction: column;
+					}
+
+					.bottom-content {
+						padding-top: @padding;
+					}
+
+						.button {
+							margin: @margin;
+							padding: 10px 10px;
+							border-radius: 4px;
+							background-color: #6B6E6F;
+							border: none;
+							text-decoration: none;
+							color: white;
+							font-size: 20px;
+						}
+	
+		.middle-contain {
+			display: flex;
+			justify-content: space-around;
+			padding-top: @padding;
+		}
+
+			.text-container {
+				width: 48%;
+				padding: @padding;
+				padding-top: @padding;
+			}
+
+			.list-container {
+				width: 48%;
+				padding: @padding;
+				padding-top: @padding;
+			}
+
+			h3 {
+				padding: @padding;
+				font-weight: bold;
+				font-size: 40px;
+				padding-bottom: @padding;
+				padding-top: 20px;
+				margin-left: 0px;
+				}
+
+				ul {
+					list-style-type: none;
+					padding: 0;
+					border: 1px solid gray;
+				}
+
+					ul li {
+						padding: 8px 16px;
+						.bordered();
+					}
+
+						ul li:last-child {
+							border-bottom: none;
+						}
+
+	.bottom-table {
+		padding: @padding;
+		margin: @margin;
+	}
+
+		.history {
+			table-layout: fixed;
+			width: 100%;
+			white-space: nowrap;
+			padding: 20px 10px;
+			margin: @margin;
+			border: 1px solid gray;
+		}
+
+		.history td {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+			.row-yrs {
+				width: 3%;
+				margin: @margin;
+				padding: @padding;
+				font-weight: bold;
+			}
+
+				.row-company {
+					width: 20%;
+					font-weight: bold;
+				}
+
+					.row-title {
+						width: 30%;
+						font-weight: bold;
+					}
+
+						.row-tech {
+							width: 40%;
+							font-weight: bold;
+						}
+
+							td {
+								font-weight: bold;
+							}
+
+							@media (max-width: 500px) {
+								.history p {
+									font-size: 1.3rem;
+								}
+							}
+
+	.contact {
+		width: 60%;
+		padding: @padding;
+		margin: @margin;
+	}
+
+		@media (max-width: 500px) {
+			.contact li {
+				font-size: 1.3rem;
+				width: 50%;
+			}
+		}
+																
+	.copy {
+		display: flex;
+		justify-content: center;
+		padding: @padding;
+		margin: @margin;
+		background:#6b6b6b;
+	}
+
+		small {
+			color: white;
+		}
