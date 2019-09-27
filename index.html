@@ -14,102 +14,103 @@
 </head>
 
 <body>
-  <header class="container">
-    <section class="flex-content nav-bar">
-      <nav class="space">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-      </nav>
+  <div class="container">
+    <header class="header-nav">
+      <section class="flex-content nav-bar">
+        <nav class="space">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </section>
+    </header>
+    
+    <main class="gray-box">
+      <img class="top-img" src="https://github.com/Catherinesjkim/UI-III-Flexbox/blob/master/great-idea/img/services-info.png?raw=true" alt="Web Designer's Desk.">
+
+      <div class="about-me">
+        <h1>Catherine Kim - Web Dev</h1>
+        <h2>Technology is my jam!</h2>
+      </div>
+
+      <div class="bottom-content">
+          <p>Occassionally I have time to work on side projects, if you're interested, let me know by signing up on this website.</p>
+          <button class="button">Lets Team Up</button>
+      </div>
+    </main>
+    
+    <section class="middle-contain">
+      <div class="text-container">
+        <h3>Listen Up...</h3>
+        <p>I would be a great hire because I'm a problem solver and have a very postive attitude in life. I don't get down easily and can brighten other people's life while coding away and building awesome products.</p>
+      </div>
+      
+      <div class="list-container">
+        <h3>Stuff I'm Good At:</h3>
+        <ul>
+          <li>Yoga</li>
+          <li>Coding up UI</li>
+          <li>Finding Argentinean RoR Developers</li>
+          <li>Using flexbox</li>
+          <li>Taking long naps</li>
+        </ul>
+      </div>
     </section>
-  </header>
     
-  <main class="gray-box">
-    <img class="top-img" src="https://github.com/Catherinesjkim/UI-III-Flexbox/blob/master/great-idea/img/services-info.png?raw=true" alt="Web Designer's Desk.">
-
-    <div class="about-me">
-      <h1>Catherine Kim - Web Dev</h1>
-      <h2>Technology is my jam!</h2>
-    </div>
-
-    <div class="bottom-content">
-        <p>Occassionally I have time to work on side projects, if you're interested, let me know by signing up on this website.</p>
-        <button class="button">Lets Team Up</button>
-    </div>
-  </main>
-    
-  <section class="middle-contain">
-    <div class="text-container">
-      <h3>Listen Up...</h3>
-      <p>I would be a great hire because I'm a problem solver and have a very postive attitude in life. I don't get down easily and can brighten other people's life while coding away and building awesome products.</p>
-    </div>
-    
-    <div class="list-container">
-      <h3>Stuff I'm Good At:</h3>
-      <ul>
-        <li>Yoga</li>
-        <li>Coding up UI</li>
-        <li>Finding Argentinean RoR Developers</li>
-        <li>Using flexbox</li>
-        <li>Taking long naps</li>
-      </ul>
-    </div>
-  </section>
-    
-  <section class="bottom-table">
-    <div class="table">
+    <section class="table">
       <h3>Work History</h3>
 
       <table class="history">
-        <thead>
-          <tr>
-            <th class="row-1 row-yrs">Yrs</th>
-            <th class="row-2 row-company">Company</th>
-            <th class="row-3 row-title">Title</th>
-            <th class="row-4 row-tech">Tech Used</th>
+        <thead class="table-head">
+          
+          <tr class="row">
+            <th class="row-yrs">Yrs</th>
+            <th class="row-company">Company</th>
+            <th class="row-title">Title</th>
+            <th class="row-tech">Tech Used</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td>3</td>
-            <td>ClearAccessIP</td>
-            <td>Account Specialist</td>
-            <td>Ruby on Rails</td>
+          <tr class="column">
+            <td class="col-years">3</td>
+            <td class="col-company">ClearAccessIP</td>
+            <td class="col-title">Account Specialist</td>
+            <td class="col-tech">Ruby on Rails</td>
           </tr>
 
           <tr>
-            <td>3</td>
-            <td>Lowenstein Sandler</td>
-            <td>Patent Paralegal</td>
-            <td>Script Language</td>
+            <td class="col-years">3</td>
+            <td class="col-company">Lowenstein Sandler</td>
+            <td class="col-title">Patent Paralegal</td>
+            <td class="col-tech">Script Language</td>
           </tr>
 
           <tr>
-            <td>1</td>
-            <td>Innovation Counsel</td>
-            <td>Patent Specialist</td>
-            <td>Patent Language</td>
+            <td class="col-years">1</td>
+            <td class="col-company">Innovation Counsel</td>
+            <td class="col-title">Patent Specialist</td>
+            <td class="col-tech">Patent Language</td>
           </tr>
-
         </tbody>  
       </table>
-    </div>
-  </section>
+    </section>
 
-  <div class="contact">
-    <h3>Contact</h3>
-    <ul>
-      <li>Phone number: 949-933-7942</li>
-      <li>Email: catherinesjkim@gmail.com</li>
-    </ul>
-  </div> 
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul class="box">
+          <li>Phone number: 949-933-7942</li>
+          <li>Email: cjkim@gmail.com</li>
+        </ul>
+      </div> 
 
-    <div class="copy">
-      <footer class="page-footer">
-        <small>Copyright Awesomeness 2018</small>
-      </footer> 
+      <div class="copy">
+        <footer class="page-footer">
+          <small>Copyright Awesomeness 2018</small>
+        </footer> 
+      </div>
     </div>
+    <!-- END OF MAIN CONTAINER DIV -->
   </body>
 </html>
